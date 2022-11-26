@@ -1,13 +1,13 @@
-let url = window.location.href;
-let swLocation = '/twittor/sw.js';
+// let url = window.location.href;
+// let swLocation = '/twittor/sw.js';
 
 // Registro del SW
 if (navigator.serviceWorker) {
-    if(url.includes('localhost')){   
+    /* if(url.includes('localhost')){   
         swLocation = './sw.js';
     }
-    navigator.serviceWorker.register(swLocation);
-    //navigator.serviceWorker.register('./sw.js');
+    navigator.serviceWorker.register(swLocation); */
+    navigator.serviceWorker.register('./sw.js');
 }
 
 // Referencias de jQuery
